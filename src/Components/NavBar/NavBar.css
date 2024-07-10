@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    position: sticky;
+    justify-content:space-between;
+    background-color: white;
+}
+
+.sidebar-icon {
+    margin: 5px 0 0 10px;
+    
+}
+
+.searchbar {
+   display: flex;
+   border: 1px #00000081 solid;
+   padding: 8px 12px;
+   border-radius: 15px;
+   margin-top: 10px;
+}
+.searchbar input {
+    width: 500px;
+    border: 0px;
+    outline: 0px;
+    background : transparent;
+}
+
+.upload-notification-profile {
+    
+}
+
+.userprofile {
+
+}

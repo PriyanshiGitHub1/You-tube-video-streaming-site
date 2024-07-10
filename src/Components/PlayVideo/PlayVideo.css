@@ -1,0 +1,173 @@
+.playvideo {
+    margin-top: 30px;
+    margin-left: 120px;
+    float: left;
+    max-width: 66%;
+    position: relative;
+}
+
+.iframe-embed {
+    border-radius: 15px;
+}
+
+.playvideo h3 {
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+}
+
+.playvideo-info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.creater-details {
+    display: flex;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+}
+
+.creater-details img{
+   width: 30px;
+   height:30px;
+   border-radius: 15px;
+   margin-right: 10px;
+}
+
+.video-reaction {
+    position: absolute;
+    float:right;
+}
+
+.playvideo-info button {
+    width: 100px;
+    margin-left: 30px;
+    border-color: white;
+    background-color: rgba(255, 0, 0, 0.842);
+    font-weight: bold;
+    font-family: "Roboto", "Arial", sans-serif;
+    border-style: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.playvideo-info button:hover {
+    background-color: grey;
+}
+
+.video-description {
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.541);
+    max-width: 1250px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.video-description p {
+    text-align: left;
+    color: black;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.video-description h4 {
+    text-align: left;
+    color: black;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.comment h4 {
+    text-align: left;
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+}
+
+.user-info {
+    text-align: left;
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.user-info img{
+    width: 30px;
+    height:30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.comment-time {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+.comment p {
+    text-align: left;
+    font-size: 14px;
+    margin-left: 50px;
+    color:black;
+}
+
+.comment-reaction {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.selected-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0px;
+}
+
+.selected-category-container {
+    max-width: 100%;
+
+}
+
+.selected-category-thumbnail img {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.selected-category-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px 10px 20px 10px;
+}
+
+.selected-category-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: start;
+}
+
+
+.selected-category-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: start;
+    color: rgb(90, 86, 86);
+}
