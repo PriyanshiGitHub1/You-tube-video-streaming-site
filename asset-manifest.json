@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/You-tube-video-streaming-site%20/static/css/main.840c1837.css",
+    "main.js": "/You-tube-video-streaming-site%20/static/js/main.1a8bc316.js",
+    "static/js/453.018e8737.chunk.js": "/You-tube-video-streaming-site%20/static/js/453.018e8737.chunk.js",
+    "index.html": "/You-tube-video-streaming-site%20/index.html",
+    "main.840c1837.css.map": "/You-tube-video-streaming-site%20/static/css/main.840c1837.css.map",
+    "main.1a8bc316.js.map": "/You-tube-video-streaming-site%20/static/js/main.1a8bc316.js.map",
+    "453.018e8737.chunk.js.map": "/You-tube-video-streaming-site%20/static/js/453.018e8737.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.840c1837.css",
+    "static/js/main.1a8bc316.js"
+  ]
+}
