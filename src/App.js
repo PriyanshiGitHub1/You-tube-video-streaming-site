@@ -16,7 +16,7 @@ function App() {
  
   return (
     <>
-      <Router>
+      <Router basename="/You-tube-video-streaming-site">
         <NavBar setMenuBar={setMenuBar} setSearchTerm={setSearchTerm} />
         <MenuBar menuBar={menuBar} category={category} setCategory={setCategory} />
         <Routes>
