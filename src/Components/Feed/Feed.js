@@ -32,7 +32,6 @@ const Feed = ({ category, searchTerm, menuBar}) => {
                     }).map((item) => <Link to={ `/videos/${item.id}`} key={uuidv4()}>
                     <div  className='vdo-container'>
                         <div className='thumbnail'><img src={item.snippet.thumbnails.medium.url} /></div>
-                        <div className='profile'><img src={item.profile} /></div>
                         <h2>{item.snippet.title && item.snippet.title.length > 8 ? item.snippet.title.slice(0, 35) + "..." : item.snippet.title}</h2>
                         <p>{item.snippet.channelTitle}< br />
                             {valueConverter(item.statistics.viewCount)}

@@ -57,17 +57,22 @@ const PlayVideo = ({ videoId, category, menuBar }) => {
         <>
 
             <div className='playvideo'>
-                <iframe className="iframe-embed" width="1250" height="703" src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe className="iframe-embed" width="100%" height="600" src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 <h3>{apiData ? apiData?.snippet?.title : "Title here"}</h3>
                 <hr />
                 <div className='playvideo-info'>
                     <div className='creater-details'>
+                        <div>
                         {channelData ? <img src={channelData?.snippet?.thumbnails.default.url} /> : <CgProfile size={30} style={{ marginRight: "5px", display: "inline" }} />}
+                        </div>
+                        <div>
                         {apiData ? apiData?.snippet?.channelTitle : "Channel Title"} <br />
-                        {channelData ? valueConverter(channelData?.statistics?.subscriberCount) : "Subscriber Count"}</div>
-                    <button>Subscribe</button>
+                        <span style={{float: "left"}}>{channelData ? valueConverter(channelData?.statistics?.subscriberCount) : "Subscriber Count"}</span>
+                        </div>
+                        <div><button>Subscribe</button></div>
+                    </div>
                     <div className='video-reaction'>
-                        <BiLike size={30} style={{ marginLeft: "900px", marginRight: "10px" }} />
+                        <BiLike size={30} style={{ marginLeft: "700px", marginRight: "10px" }} />
                         {apiData ? valueConverter(apiData?.statistics?.likeCount) : "Like Count"}
                         <BiDislike size={30} style={{ marginLeft: "10px", marginRight: "10px" }} />
                         <FaRegShareSquare size={30} style={{ marginLeft: "30px", marginRight: "10px" }} />
