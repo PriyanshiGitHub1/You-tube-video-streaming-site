@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/You-tube-video-streaming-site/static/css/main.5347ecec.css",
-    "main.js": "/You-tube-video-streaming-site/static/js/main.ede0af85.js",
+    "main.css": "/You-tube-video-streaming-site/static/css/main.bf8dc82a.css",
+    "main.js": "/You-tube-video-streaming-site/static/js/main.2bcfac4c.js",
     "static/js/453.018e8737.chunk.js": "/You-tube-video-streaming-site/static/js/453.018e8737.chunk.js",
     "index.html": "/You-tube-video-streaming-site/index.html",
-    "main.5347ecec.css.map": "/You-tube-video-streaming-site/static/css/main.5347ecec.css.map",
-    "main.ede0af85.js.map": "/You-tube-video-streaming-site/static/js/main.ede0af85.js.map",
+    "main.bf8dc82a.css.map": "/You-tube-video-streaming-site/static/css/main.bf8dc82a.css.map",
+    "main.2bcfac4c.js.map": "/You-tube-video-streaming-site/static/js/main.2bcfac4c.js.map",
     "453.018e8737.chunk.js.map": "/You-tube-video-streaming-site/static/js/453.018e8737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5347ecec.css",
-    "static/js/main.ede0af85.js"
+    "static/css/main.bf8dc82a.css",
+    "static/js/main.2bcfac4c.js"
   ]
 }
