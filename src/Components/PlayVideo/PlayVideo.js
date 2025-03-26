@@ -41,7 +41,16 @@ const PlayVideo = ({ videoId, menuBar }) => {
   return (
     <div className='playvideo-container'>
       <div className={`playvideo ${menuBar ? 'playvideo-shifted' : ''}`}>
-        <iframe className="iframe-embed" width="100%" height="auto" style={{ aspectRatio: '16/9' }} src={`https://www.youtube.com/embed/$${videoId}?autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className="iframe-embed" 
+        width="100%" height="auto" 
+        style={{ aspectRatio: '16/9' }} 
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" 
+        allowFullScreen>
+        </iframe>
+
         <h3>{apiData ? apiData?.snippet?.title : "Title here"}</h3>
         <hr />
         <div className='playvideo-info'>
