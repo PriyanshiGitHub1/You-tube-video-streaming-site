@@ -1,7 +1,12 @@
-.small-container {
-    
-}
-
-.large-container {
-   
-}
+.home-page-container {
+    display: flex;
+  }
+  
+  .feed-container {
+    flex-grow: 1; /* Allow the feed to expand */
+    transition: margin-left 0.3s ease; /* smooth transition */
+  }
+  
+  .feed-shifted {
+    margin-left: 310px; /* Adjust this value to match your sidebar width */
+  }

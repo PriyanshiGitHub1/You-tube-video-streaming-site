@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import NavBar from './Components/NavBar/NavBar';
 import HomePage from './Components/HomePage/HomePage';
-import History from './Components/MenuBarList/History';
 import Video from './Components/Video/Video';
 import MenuBar from './Components/MenuBar/MenuBar';
 import './App.css'
@@ -21,8 +20,8 @@ function App() {
         <MenuBar menuBar={menuBar} category={category} setCategory={setCategory} />
         <Routes>
           <Route path="/" element={<HomePage category={category} searchTerm={searchTerm} menuBar={menuBar}/>} />
-          <Route path="/categories/:categoryId" element={<HomePage category={category} searchTerm={searchTerm} />} />
-          <Route path="/videos/:videoId" element={<Video category={category} />} />
+          <Route path="/categories/:categoryId" element={<HomePage category={category} searchTerm={searchTerm} menuBar={menuBar}/>} />
+          <Route path="/videos/:videoId" element={<Video category={category} menuBar={menuBar}/>} />
         </Routes>
       </Router>
     </>

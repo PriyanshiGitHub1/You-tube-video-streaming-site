@@ -1,4 +1,4 @@
-.feed {
+/* .feed {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -16,7 +16,6 @@
     max-width: 100%;
 
 }
-
 .thumbnail img {
     height: 200px;
     width: 350px;
@@ -45,4 +44,64 @@
     font-size: 14px;
     text-align: start;
     color: rgb(90, 86, 86);
-}
+} */
+
+.feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Or space-around, space-between, etc. */
+    gap: 20px; /* Space between items */
+    padding: 10px; /* Add some padding around the container */
+  }
+  
+  .feed-expand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 50px 20px; /* Adjusted padding for expanded view */
+  }
+  
+  .vdo-container {
+    display: flex;
+    flex-direction: column; /* Stack thumbnail and text vertically */
+    max-width: 350px; /* Set a max width for each video container */
+    width: 100%; /* Make it responsive within the flex container */
+  }
+  
+  .thumbnail img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+  
+  .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  
+  .vdo-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px; /* Adjusted font size for responsiveness */
+    text-align: left;
+    margin: 0 10px; /* Add horizontal margin */
+  }
+  
+  .vdo-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; /* Adjusted font size for responsiveness */
+    text-align: left;
+    color: rgb(90, 86, 86);
+    margin: 5px 10px; /* Add horizontal and vertical margin */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .vdo-container {
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  }

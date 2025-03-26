@@ -1,12 +1,24 @@
+.playvideo-container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .playvideo {
-    margin-top: 30px;
-    margin-left: 120px;
-    float: left;
-    max-width: 66%;
+  margin-top: 30px;
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.playvideo-shifted {
+  margin-left: 0; /* Adjust to 0, since the parent container is shifted */
 }
 
 .iframe-embed {
-    border-radius: 15px;
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .playvideo h3 {
@@ -20,10 +32,12 @@
 
 .playvideo-info {
     display: flex;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Distribute space between elements */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .creater-details {
@@ -43,7 +57,10 @@
 }
 
 .video-reaction {
-    position: absolute;
+    display: flex;
+  align-items: center;
+  margin-left: auto; /* Push to the far right */
+  gap: 20px
 }
 
 .playvideo-info button {
@@ -172,3 +189,13 @@
     text-align: start;
     color: rgb(90, 86, 86);
 }
+
+.playvideo-shifted {
+    margin-left: 250px; /* Adjust this value to match your sidebar width */
+  }
+
+  @media (max-width: 900px) {
+    .playvideo-shifted {
+      margin-left: 0; /* Remove margin on mobile */
+    }
+  }

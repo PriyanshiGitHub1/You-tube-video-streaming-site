@@ -1,0 +1,28 @@
+.video {
+  display: flex;
+  width: 100%;
+}
+
+.video-shifted {
+  margin-left: 10%;
+}
+
+.video-content {
+  width: 66%; /* Default width for desktop */
+}
+
+.recommended-section {
+  width: 34%; /* Default width for desktop */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 900px) {
+  .video {
+    flex-direction: column; /* Stack video and recommended */
+  }
+
+  .video-content,
+  .recommended-section {
+    width: 100%; /* Full width on mobile */
+  }
+}

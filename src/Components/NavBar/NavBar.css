@@ -1,33 +1,65 @@
-nav {
+.navbar {
     display: flex;
-    position: sticky;
-    justify-content:space-between;
+    justify-content: space-between;
+    align-items: center; /* Vertically center items */
     background-color: white;
-}
+    padding: 10px; /* Add padding for spacing */
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure it stays on top */
+  }
+  
+  .sidebar-icon {
+    margin-left: 5px;
+  }
+  
+  .searchbar {
+    display: flex;
+    border: 1px #00000081 solid;
+    border-radius: 15px;
+    margin: 10px;
+    flex-grow: 1; /* Allow searchbar to grow */
+    max-width: 600px; /* Limit max width */
+  }
+  
+  .searchbar input {
+    flex-grow: 1; /* Allow input to grow */
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 8px 12px;
+  }
+  
+  .searchbar-icon {
+    padding: 8px;
+  }
+  
+  .upload-notification-profile {
+    display: flex;
+    align-items: center; /* Vertically center icons */
+    margin-right: 5px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 900px) {
+    .searchbar {
+      max-width: 300px; /* Adjust max width on smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .searchbar {
+      display: none; /* Hide searchbar on very small screens */
+    }
 
-.sidebar-icon {
-    margin: 5px 0 0 10px;
-    
-}
+    .upload-notification-profile {
+        margin-right: 0px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+      .upload-notification-profile {
+          display: none;
+      }
+  }
 
-.searchbar {
-   display: flex;
-   border: 1px #00000081 solid;
-   padding: 8px 12px;
-   border-radius: 15px;
-   margin-top: 10px;
-}
-.searchbar input {
-    width: 500px;
-    border: 0px;
-    outline: 0px;
-    background : transparent;
-}
-
-.upload-notification-profile {
-    
-}
-
-.userprofile {
-
-}
